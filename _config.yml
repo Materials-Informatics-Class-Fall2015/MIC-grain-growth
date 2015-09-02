@@ -8,7 +8,7 @@ baseurl: "/grain-growth"
 url: "http://fredhohman.github.io"
 github_username:  fredhohman
 project_repository: grain-growth
-+disqus_shortname: project-pages
+disqus_shortname: project-pages
 
 # Build settings
 # Don't change these variables
