@@ -3,7 +3,6 @@ layout:     post
 title:      Microstructure Generation using DREAM 3D
 date:       2015-08-29
 author:     David Montes de Oca Zapiain
-tags: 		Microstructure generation
 ---
 
 The goal of this blog post is to teach our followers how to generate a synthetic microstructure using the open source software DREAM 3D. 
