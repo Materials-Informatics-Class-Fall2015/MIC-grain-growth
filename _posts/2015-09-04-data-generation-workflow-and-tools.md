@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Microstructure Generation Workflow and Tools
+title:      Data Generation Workflow and Tools
 date:       2015-09-04
 author:     Fred Hohman
 ---
