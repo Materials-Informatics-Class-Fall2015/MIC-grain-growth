@@ -23,7 +23,7 @@ The first step in generating your own microstructure will be to generate the sta
 * **D**: This allows the user to establish cutoff values for the grain size, thus enabling to remove either too big or to small grains form the generated microstructure. They are represented on the plot as blue vertical lines. 
 * **E**: Allows the user to select either equiaxed or rolled shape grains. 
 
-Click generate Data and bottom F will become available. This option allows you to match your generated microstructure to a specific ODF obtained by EBSD analysis of a material. Please follow [this link](http://www.slideshare.net/mwpriddy/dream3d-tutorial) and observe slides 15 and 16 on how to do this. This option is extremely useful since it will allow DREAM 3D to generate a much more realistic microstructure, nevertheless all the data of that microstructure needs to be available to the user.
+Click "generate Data" and button F will become available. This option allows you to match your generated microstructure to a specific ODF obtained by EBSD analysis of a material. Please follow [this link](http://www.slideshare.net/mwpriddy/dream3d-tutorial) and observe slides 15 and 16 on how to do this. This option is extremely useful since it will allow DREAM 3D to generate a much more realistic microstructure, nevertheless all the data of that microstructure needs to be available to the user.
 
 Important Note: the pipeline built in that tutorial was not built in the latest DREAM 3D update those it represents different steps that those that we will show after.
  
@@ -59,4 +59,8 @@ For Filter 7 please input the data to match the following screenshot:
 
 ![Filter 7 Screenshot]({{ site.url }}\grain-growth\img\blogpostimages\bp1\image8.jpg)
 
-Filters 8 and 9 errors will disappear once an output path is added. If you want to see data in Paraview please check the “Write Xdmf file” check box. In order to view in Paraview, load the data, check all the check box underneath Cell arrays, include that one and finally select “Surface” representation. Important if it does not load select first “Slice” and then “Surface”. 
+Filters 8 and 9 errors will disappear once an output path is added. If you want to see data in Paraview please check the “Write Xdmf file” check box.
+
+In order to view in Paraview, load the data, check all the check box underneath Cell arrays, include that one and finally select “Surface” representation. Important if it does not load select first “Slice” and then “Surface”. 
+
+DREAM 3D has varouis output filters. In this tutorial we only mention 2 out of the many possibles. The readers can tailor their outputs to their specific needs. 
