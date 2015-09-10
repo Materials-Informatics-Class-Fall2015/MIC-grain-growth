@@ -4,7 +4,7 @@ title: Grain Growth
 header-img: img/grain-growth.png
 email: fredhohman@gatech.edu
 description: "Grain Growth Project for CSE 8803/ME 8883 at Georgia Tech."
-baseurl: "/grain-growth"
+baseurl: "/MIC-grain-growth"
 url: "http://Materials-Informatics-Class-Fall2015.github.io"
 github_username:  fredhohman
 project_repository: MIC-grain-growth
