@@ -23,14 +23,7 @@ vertical:		</section><section markdown="1">
 
 <!-- Start Writing Below in Markdown -->
 
-## Topics
- 
-* Theory
-* Data and Computation
-
-{{ page.horizontal }}
-
-## Theory Outline
+# Theory Outline
 
 * Background Theory on Grain Growth
 * Objective of our Project
@@ -71,10 +64,11 @@ vertical:		</section><section markdown="1">
 
 {{ page.horizontal }}
 
-### Data and Computation Outline
+# Data and Computation Outline
 
 * Data Tools and Generation Workflow
 * How Much Data?
+* What is the Data?
 * Current Status
 * What's Next
 
@@ -84,8 +78,7 @@ vertical:		</section><section markdown="1">
 
 * SPPARKS: open source code developed by Sandia National Labs
 * PACE: computing cluster 
-* Pinning Script
-	* Allows pinning of different distributions 
+* Pinning algorithm: allows pinning of different distributions 
 * Paraview: 3D visualization software
 
 {{ page.horizontal }}
@@ -96,6 +89,8 @@ vertical:		</section><section markdown="1">
 * Apply pinning algorithm with desired variables selected
 * Run SPPARKS on PACE on our pinned microstructure to simulate grain growth
 * View 3D models in Paraview
+
+***
 
 Goal: one button that does it all.
 
@@ -114,22 +109,42 @@ We are varying 3 variables in our simulations
 	* 3x1x1 prism
 	* 3D plus sign
 
-![Picture 3]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation1/3.png)
-
 2. Pin percentage: {0.5, 1.0, 1.5, 2.0, 2.5, 3.0}
 3. Pin distribution: random, uniform, cluster
+
+{{ page.vertical }}
+
+![Picture 3]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation1/3.png)
 
 {{ page.horizontal }}
 
 ## How Much Data? 
 
-* Pin size/shape: 6 options
-* Pin percentage: 6 options
-* Pin distribution: 8 options
+1. Pin size/shape: 6 options
+2. Pin percentage: 6 options
+3. Pin distribution: 8 options
 
-Total number of simulations to be run: 6 x 6 x 8 = 288
+Total number of simulations to be run: 6 x 6 x 8 = **288**
 
 Note: this could be reduced depending on computational time!
+
+{{ page.horizontal }}
+
+## What is the Data?
+
+* Each microstructure is 300x300x300 voxels
+* Full 3D data of pinned microstructures growing
+	* We have 300 images for a given time-step in the simulation
+
+{{ page.vertical }}
+
+![gg1]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation1/gg3.jpg)
+{{ page.vertical }}
+![gg2]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation1/gg3.jpg)
+{{ page.vertical }}
+![gg3]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation1/gg3.jpg)
+{{ page.vertical }}
+![gg3]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation1/gg2.gif)
 
 {{ page.horizontal }}
 
@@ -139,12 +154,14 @@ Note: this could be reduced depending on computational time!
 * Developed pinning algorithm for random and uniform distributions, missing clustering
 * Able to successfully simulate grain growth with pins and visualize growth in 3D as animation/movie
 
+![gg3]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation1/gg1.gif)
+
 {{ page.horizontal }}
 
 ## What's Next
 
 * Finalize number of variables
-* Patch together tools in master program that inputs our variables and outputs multinational data 
+* Patch together tools in master program that inputs our variables and outputs simulational data 
 * PymKS—*coming soon!*
 
 <!-- End Here -->
