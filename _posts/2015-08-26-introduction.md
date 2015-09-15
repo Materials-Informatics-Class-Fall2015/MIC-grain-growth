@@ -2,7 +2,7 @@
 layout:     post
 title:      Introduction
 date:       2015-08-28
-author:     Grain Growth Team
+author:     Fred Hohman, David Montes de Oca Zapiain
 ---
 
 Welcome to the **Grain Growth** Project website! 

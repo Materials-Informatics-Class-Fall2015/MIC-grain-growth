@@ -20,18 +20,25 @@ vertical:		</section><section markdown="1">
 #### {{ page.date | | date: "%I %M %p ,%a, %b %d %Y"}}
 
 {{ page.horizontal }}
+
+########################################
+########################################
 <!-- Start Writing Below in Markdown -->
 
 # Outline
+
 ## David: Theory
+
 * Background theory on grain growth
 * What are inputs 
 * What we expect see or measure from outputs
 
-## Fred: Data Analysis
-* Tools we are using
-* Spparks input
-* Distributions (Random and uniform)
+## Fred: Data and Computation
+
+* Tools
+* What Data?
+* Current Status
+	* Pinning Distributions
 
 {{ page.horizontal }}
 
@@ -42,6 +49,9 @@ vertical:		</section><section markdown="1">
 
 
 <!-- End Here -->
+########################################
+########################################
+
 {{ page.horizontal }}
 
 #[Print]({{ site.url }}{{ site.baseurl }}{{ page.url }}/?print-pdf#)
