@@ -21,19 +21,17 @@ vertical:		</section><section markdown="1">
 
 {{ page.horizontal }}
 
-########################################
-########################################
 <!-- Start Writing Below in Markdown -->
 
-# Outline
+# Topics
 
-## David: Theory
+## Theory
 
 * Background theory on grain growth
 * What are inputs 
 * What we expect see or measure from outputs
 
-## Fred: Data and Computation
+## Data and Computation
 
 * Tools
 * What Data?
@@ -49,8 +47,7 @@ vertical:		</section><section markdown="1">
 
 
 <!-- End Here -->
-########################################
-########################################
+
 
 {{ page.horizontal }}
 
