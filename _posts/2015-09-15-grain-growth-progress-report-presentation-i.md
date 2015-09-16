@@ -1,6 +1,6 @@
 ---
 layout:     slide
-title:     	Grain Growth Progress Report Presentation I
+title:     	Pinned Grain Growth Progress Report Presentation I
 date:      	2015-09-15
 author:     Fred Hohman, David Montes de Oca Zapiain
 
@@ -28,7 +28,7 @@ vertical:		</section><section markdown="1">
 * Background Theory on Grain Growth
 * Objective of our Project
 * Intended Approach
-* Overview of Tools we are using
+* Input and Output Analysis
 
 {{ page.horizontal }}
 
@@ -43,8 +43,9 @@ vertical:		</section><section markdown="1">
 
 ## Objective 
 
-* We are using Kinetic Monte Carlo equations through the SPPARKS Program to analyze the effect of different precipitate distributions on the Grain Growth of a Microstructure. 
-* Then we want to predict with sufficient accuracy and in a computationally non-expensive fashion if a specified Distribution of Particles will cause abnormal or normal grain growth. This will be achieved by using a Data Science Approach.
+* We are using Kinetic Monte Carlo equations through the SPPARKS Program to analyze the effect of different precipitate distributions on the Grain Growth of a Microstructure and ultimately its size distribution.The process Spparks simulates is ageing.
+ * Then we want to predict with sufficient accuracy and in a computationally non-expensive fashion the correlation that exists between a specified Distribution of Particles and the Final Microstructure. This will be achieved by using a Data Science Approach.
+*Thus we are establishing a Process-Structure Relationship 
 
 {{ page.horizontal }}
 
