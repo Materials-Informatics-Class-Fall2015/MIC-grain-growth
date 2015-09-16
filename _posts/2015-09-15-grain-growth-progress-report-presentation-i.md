@@ -64,7 +64,7 @@ vertical:		</section><section markdown="1">
 
 {{ page.horizontal }}
 
-# Data and Computation Outline
+# Data Outline
 
 * Data Tools and Generation Workflow
 * How Much Data?
@@ -138,9 +138,9 @@ Note: this could be reduced depending on computational time!
 
 {{ page.vertical }}
 
-![gg1]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation1/gg3.jpg)
+![gg1]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation1/gg1.jpg)
 {{ page.vertical }}
-![gg2]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation1/gg3.jpg)
+![gg2]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation1/gg2.jpg)
 {{ page.vertical }}
 ![gg3]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation1/gg3.jpg)
 {{ page.vertical }}
@@ -161,8 +161,8 @@ Note: this could be reduced depending on computational time!
 ## What's Next
 
 * Finalize number of variables
-* Patch together tools in master program that inputs our variables and outputs simulational data 
-* PymKS—*coming soon!*
+* Patch toosl together in master program that inputs our variables and outputs simulational data 
+* PymKS and 2-point statistics — *coming soon!*
 
 <!-- End Here -->
 
