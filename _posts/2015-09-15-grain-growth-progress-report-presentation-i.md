@@ -164,7 +164,7 @@ Note: this could be reduced depending on computational time!
 
 * Finalize number of variables
 * Patch tools together in master program that inputs our variables and outputs simulational data 
-* PymKS and 2-point statistics — *coming soon!*
+* PyMKS and 2-point statistics — *coming soon!*
 
 <!-- End Here -->
 
