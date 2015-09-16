@@ -81,6 +81,8 @@ vertical:		</section><section markdown="1">
 * Pinning algorithm: allows pinning of different distributions 
 * Paraview: 3D visualization software
 
+![pv]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation1/pvm.png)
+
 {{ page.horizontal }}
 
 ## Data Generation Workflow
@@ -161,7 +163,7 @@ Note: this could be reduced depending on computational time!
 ## What's Next
 
 * Finalize number of variables
-* Patch toosl together in master program that inputs our variables and outputs simulational data 
+* Patch tools together in master program that inputs our variables and outputs simulational data 
 * PymKS and 2-point statistics — *coming soon!*
 
 <!-- End Here -->
