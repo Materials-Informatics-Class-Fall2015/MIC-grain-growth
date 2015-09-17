@@ -1,13 +1,11 @@
 ---
-layout:     slide
+layout:     post
 title:     	Pinned Grain Growth Progress Report I
 date:      	2015-09-16
 author:     Fred Hohman, David Montes de Oca Zapiain
 ---
 
 This is the post equivalent of the presentation given for our first progress report. 
-
-
 
 # Theory Outline
 
