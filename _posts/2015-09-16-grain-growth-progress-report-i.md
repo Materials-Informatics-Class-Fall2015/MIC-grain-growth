@@ -2,7 +2,7 @@
 layout:     post
 title:     	Pinned Grain Growth Progress Report I
 date:      	2015-09-16
-author:     Fred Hohman, David Montes de Oca Zapiain
+author:     Fred Hohman
 ---
 
 This is the post equivalent of the presentation given for our first progress report. 
@@ -32,7 +32,6 @@ This is the post equivalent of the presentation given for our first progress rep
 ## Inputs and Outputs
 
 * We have an initial random Microstructure to which we are going to place various different distributions of precipitates. 
-
 	1. Random
 	2. Uniform
 	3. Clustered
@@ -72,7 +71,6 @@ Goal: one button that does it all.
 We are varying 3 variables in our simulations
 
 1. Pin size/shape:
-	
 	* 0 neighbor cube (single voxel, 1x1x1)
 	* 1 neighbor cube (3x3x3)
 	* 2x2x2 cube
