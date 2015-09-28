@@ -32,11 +32,11 @@ Remember how we mentioned that if a grain id was repeated it meant those two vox
 
 The results of this filtering is the following:
 
-![FFT Filtering Flowchart]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp3/image3.jpeg)
+![FFT Filtering Result]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp3/image3.jpeg)
 
 Finally we now just need to obtain the precipitates from our data. This step is significantly less complicates since SSPARKS by convention assigns the precipitate the biggest grain id. Thus we just needed to identify the location where the maximum grain ids were located and map them. Performing this last step on the previous images we obtain the image of the precipitate distribution, which is as follows:
 
-![FFT Filtering Flowchart]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp3/image4.jpeg)
+![FFT Precipitate Distribution Filtering ]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp3/image4.jpeg)
 
 As it can be observed this image corresponds to a uniform distribution of precipitates every determined voxels. I hope this post was useful and please be on the lookout for new posts since we will be discussing the results of the 2 pt. statistics analysis performed on the simulations. 
 
