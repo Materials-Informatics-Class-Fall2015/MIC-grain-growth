@@ -20,7 +20,7 @@ Now as the image states if a grain id is repeated right next to another one it m
 
 The first thing we did was to reshape our data from a single row vector to a 300x300x300 matrix, since it is easier for us to operate with that.
 
- Now the question I am pretty sure all of you have is how are we going to look in every spatial and check if it belongs to the same grain and then assign it either a 0 or a 1 according to our microstructure function in a computationally efficient manner. Well we certainly did not used a “for” loop, we used the concept of filtering with FFTs (Fast Fourier Transform) explained by Dr. Kalidini in class. 
+ Now the question I am pretty sure all of you have is how are we going to look in every spatial and check if it belongs to the same grain and then assign it either a 0 or a 1 according to our microstructure function in a computationally efficient manner. Well we certainly did not used a “for” loop, we used the concept of filtering with FFTs (Fast Fourier Transform) explained by Dr. Kalidindi in class. 
  
 The key takeaways of this concept is that an image, or any data, can be filtered by taking advantage of the convolution property of FFTs. Theory states that a function in Fourier space when excited by an impulse function has an output spectrum equal to the convolution of the function and the input function. Thus if this impulse function is a filter of some sorts the result of this convolution is the filtered function through the defined filter. The following flowchart details this process clearly. Please refer to ([resource 1][resource1], [resource2 ][resource2]) if more information about filtering with FFTs is desired. 
 
@@ -38,7 +38,7 @@ Finally we now just need to obtain the precipitates from our data. This step is 
 
 ![FFT Precipitate Distribution Filtering ]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp3/image4.jpg)
 
-As it can be observed this image corresponds to a uniform distribution of precipitates every determined voxels. I hope this post was useful and please be on the lookout for new posts since we will be discussing the results of the 2 pt. statistics analysis performed on the simulations. 
+As it can be observed this image corresponds to a uniform distribution of precipitates every determined voxels. It is important to mention that the precipitate distribution shown here is just an example for a test case. I hope this post was useful and please be on the lookout for new posts since we will be discussing the results of the 2 pt. statistics analysis performed on the simulations. 
 
 [resource1]: https://engineering.purdue.edu/~ee538/DFTbasedLinearFiltering.pdf
 [resource2]: http://eeweb.poly.edu/~yao/EL5123/lecture6_2D_DFT.pdf
