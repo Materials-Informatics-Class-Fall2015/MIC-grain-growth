@@ -9,7 +9,7 @@ author:     Fred Hohman
 
 In class we defined four key steps describing particular stages of a material informatics project:
 
-1. Defining microstructure function=
+1. Defining microstructure function
 2. Obtaining 2 point statistics
 3. Using PCA for dimensionality reduction
 4. Creating PSP linkage models
@@ -28,7 +28,7 @@ We have also tweaked our workflow a bit. We will be generating our data on PACE 
 
 ## So What About the 2 Point Statistics?
 
-As mentioned earlier we have begun exploring spatial correlations in PyMKS. Consider the first example that is on the PyMKS homepage:
+As mentioned earlier we have begun exploring spatial correlations in PyMKS. Consider the first example that is on the PyMKS homepage (note: this includes some packages that arent needed just for the example, but they are some packages taht we have found useful performing data manipulations):
 
 	import numpy as np
 	import matplotlib.pyplot as plt
@@ -64,4 +64,4 @@ So we now have a better idea how 2 point statistics are implemented on a compute
 
 Once these last two issues are addressed (which will be *very* soon) we will have another update exclusively on 2 point statistics related to our specific project. So stay tuned!
 
-[david]: "http://materials-informatics-class-fall2015.github.io/MIC-grain-growth/2015/09/28/Divide-and-conquer!/"
+[david]: http://materials-informatics-class-fall2015.github.io/MIC-grain-growth/2015/09/28/Divide-and-conquer!/
