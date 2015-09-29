@@ -28,7 +28,7 @@ We have also tweaked our workflow a bit. We will be generating our data on PACE 
 
 ## So What About the 2 Point Statistics?
 
-As mentioned earlier we have begun exploring spatial correlations in PyMKS. Consider the first example that is on the PyMKS homepage (note: this includes some packages that arent needed just for the example, but they are some packages taht we have found useful performing data manipulations):
+As mentioned earlier we have begun exploring spatial correlations in PyMKS. Consider the first example that is on the PyMKS homepage (note: this includes some packages that aren't needed just for the example, but they are some packages that we have found useful performing data manipulations):
 
 	import numpy as np
 	import matplotlib.pyplot as plt
