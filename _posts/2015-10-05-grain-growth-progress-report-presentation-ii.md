@@ -23,7 +23,7 @@ vertical:		</section><section markdown="1">
 
 <!-- Start Writing Below in Markdown -->
 
-# Outline
+## Outline
 
 * Detailed Workflow and Data Pipeline
 * Preliminary Results
@@ -35,30 +35,33 @@ vertical:		</section><section markdown="1">
 
 {{ page.horizontal }}
 
-# Matlab
+## Matlab
 
 ![Picture 1]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/1.png)
 
 {{ page.horizontal }}
 
-# Image Segmentation
+## Image Segmentation
 
 * Output from SPPARKS is a 27 million by one vector, reshape it to a 300X300X300 matrix.
 * Each number corresponds to a grainID. Max value corresponds to a precipitate.
 * We need to segment this data into our Microstructure Function.
 
 ![Picture 2]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/2.png)
+
+{{ page.vertical}}
+
 ![Picture 3]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/3.png)
 
 {{ page.horizontal }}
 
-# Obtaining Grain Boundary and Precipitates
+## Obtaining Grain Boundary and Precipitates
 
 ![Picture 4]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/4.png)
 
 {{ page.horizontal }}
 
-# Obtaining `.mat` files using PACE
+## Obtaining `.mat` files using PACE
 
 * The issue is that the output from the filter are 3 images with 0 and 1.
 * Which is desirable but we need it to change to one image with 3 distinct phases for us to input it to PyMKS.
@@ -66,48 +69,56 @@ vertical:		</section><section markdown="1">
 
 {{ page.horizontal }}
 
-# Python 
+## Python 
  
 Continuing where we left off in Matlab...
 
 * Input: `.mat` files that only contain 0, 1, and 2 as values in an 300x300x300 array 
-	* Greatly reduces memory: from `file.dump` (~500MB) to `file.mat` (~3MB)
+	* Greatly reduces memory: 
+	*`file.dump` (~500MB) -> `file.mat` (~3MB)
 
 {{ page.horizontal }}
 
-# 2 Point Statistics Conditioning
+## 2 Point Statistics Conditioning
 
 * Initial size: (300, 300, 300) per file
 * Loop that pulls each 100 outputs per simulation
-	* Concatenates to feed directly into PyMKS format
-	* (n_samples, x, y, z) = (100, 300, 300, 300)
+	* Concatenates to feed directly into PyMKS
+	* (n_samples, x, y, z) = (100, 300, 300, 300) per simulation
 
 {{ page.horizontal }}
 
-# 2 Point Statistics Computation
+## 2 Point Statistics Computation
 
 * 3 phase material -> 6 correlations 
 * Results in array of size (100, 300, 300, 300, 6)
-	* But we initially only care about one correlation: grain boundary and pins (1,2)
+	* Initially only care about one correlation: grain boundary and pins [1,2]
 * After 2 point statistics computation: (100, 300, 300, 300, 1)
 
 {{ page.horizontal }}
 
-# 2 Point Statistics Plots
+## 2 Point Statistics Plots
 
-Shows 2 point statisitsc evolve over grain growth simulation
+Shows 2 point statistics evolve over grain growth simulation
 
 Note: Visualization issues:
+
 * Low volume fraction 
 * Color bar not scaled correctly by default
 
 {{ page.vertical }}
 
 ![Picture 4]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/2pt1.png)
+
+{{ page.vertical }}
+
 ![Picture 4]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/2pt2.png)
+
+{{ page.vertical }}
+
 ![Picture 4]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/2pt3.png)
 
-# PCA
+## PCA
 
 * Forming the Data Matrix
 	* Consider each 3D microstructure as long array 
@@ -119,21 +130,27 @@ Note: Visualization issues:
 
 {{ page.horizontal }}
 
-# PCA Plots
+## PCA Plots
 
 * Final `.mat` files currently finishing on PACE
+* Code pipeline is effectively done
 * Meaningless 2D and 3D example below
 
 {{ page.vertical }}
 
 ![Picture 4]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/pca1.png)
+
+{{ page.vertical }}
+
 ![Picture 4]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/pca2.png)
 
 {{ page.horizontal }}
 
-# Next Steps
+## Next Steps
 
 Bring analysis and visualization into 3D
+
+***
 
 1. 2 point statistics of 3D data (longer computation)
 2. Visualize 3D 2 point statistics results
