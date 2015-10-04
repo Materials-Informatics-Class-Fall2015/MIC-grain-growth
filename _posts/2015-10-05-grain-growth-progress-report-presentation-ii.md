@@ -74,8 +74,8 @@ vertical:		</section><section markdown="1">
 Continuing where we left off in Matlab...
 
 * Input: `.mat` files that only contain 0, 1, and 2 as values in an 300x300x300 array 
-	* Greatly reduces memory: 
-	*`file.dump` (~500MB) -> `file.mat` (~3MB)
+	* Greatly reduces memory:
+	* `file.dump` (~500MB) -> `file.mat` (~3MB)
 
 {{ page.horizontal }}
 
@@ -101,10 +101,10 @@ Continuing where we left off in Matlab...
 
 Shows 2 point statistics evolve over grain growth simulation
 
-Note: Visualization issues:
+**Note**: Visualization issues:
 
-* Low volume fraction 
-* Color bar not scaled correctly by default
+1. Low volume fraction 
+2. Color bar not scaled correctly by default
 
 {{ page.vertical }}
 
@@ -117,6 +117,8 @@ Note: Visualization issues:
 {{ page.vertical }}
 
 ![Picture 4]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/2pt3.png)
+
+{{ page.horizontal }}
 
 ## PCA
 
@@ -133,7 +135,7 @@ Note: Visualization issues:
 ## PCA Plots
 
 * Final `.mat` files currently finishing on PACE
-* Code pipeline is effectively done
+* Code pipeline is working but needs polishing
 * Meaningless 2D and 3D example below
 
 {{ page.vertical }}
