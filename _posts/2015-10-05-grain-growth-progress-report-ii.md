@@ -82,7 +82,7 @@ Shows 2 point statistics evolve over grain growth simulation
 * SciKit Learn Randomized PCA 
 	* Can specify number of PC values to output
 	* Have tried: 2 and 3
-		* Results in (100, 2) and (100, 2) matrix
+		* Results in (100, 2) and (100, 3) matrix
 
 ## PCA Plots
 
