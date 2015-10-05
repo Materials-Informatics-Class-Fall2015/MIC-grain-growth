@@ -1,42 +1,22 @@
 ---
-layout:     slide
+layout:     post
 title:     	Pinned Grain Growth Progress Report Presentation II
 date:      	2015-10-05
 author:     Fred Hohman, David Montes de Oca Zapiain
-
-theme:		night # default/beige/blood/moon/night/serif/simple/sky/solarized
-trans:		default # default/cube/page/concave/zoom/linear/fade/none
-
-horizontal:	</section></section><section markdown="1" data-background="http://ahmetcecen.github.io/project-pages/img/slidebackground.png"><section markdown="1">
-vertical:		</section><section markdown="1">
 ---
-<section markdown="1" data-background="http://ahmetcecen.github.io/project-pages/img/slidebackground.png"><section markdown="1">
-## {{ page.title }}
 
-<hr>
+This is the post equivalent of the presentation given for our second progress report. 
 
-#### {{ page.author }}
-
-#### {{ page.date | | date: "%I %M %p ,%a, %b %d %Y"}}
-
-{{ page.horizontal }}
-
-<!-- Start Writing Below in Markdown -->
-
-## Outline
+# Outline
 
 * Detailed Workflow and Data Pipeline
 * Conditioning and Segmentation in Matlab (Step 1)
 * 2 Point Statistics and PCA in Python (Steps 2, 3)
 * Preliminary Results
 
-{{ page.horizontal }}
-
 ## Matlab
 
 ![Picture 1]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/1.png)
-
-{{ page.horizontal }}
 
 ## Image Segmentation
 
@@ -45,26 +25,17 @@ vertical:		</section><section markdown="1">
 * We need to segment this data into our Microstructure Function.
 
 ![Picture 2]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/2.png)
-
-{{ page.vertical}}
-
 ![Picture 3]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/3.png)
-
-{{ page.horizontal }}
 
 ## Obtaining Grain Boundary and Precipitates
 
 ![Picture 4]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/4.png)
-
-{{ page.horizontal }}
 
 ## Obtaining `.mat` files using PACE
 
 * The issue is that the output from the filter are 3 images with 0 and 1.
 * Which is desirable but we need it to change to one image with 3 distinct phases for us to input it to PyMKS.
 * Made a for loop that will go through each `.dumpfile` and automatically segment it and save it as .mat file.
-
-{{ page.horizontal }}
 
 ## Python 
  
@@ -74,8 +45,6 @@ Continuing where we left off in Matlab...
 	* Greatly reduces memory:
 	* `file.dump` (~500MB) -> `file.mat` (~3MB)
 
-{{ page.horizontal }}
-
 ## 2 Point Statistics Conditioning
 
 * Initial size: (300, 300, 300) per file
@@ -83,16 +52,12 @@ Continuing where we left off in Matlab...
 	* Concatenates to feed directly into PyMKS
 	* (n_samples, x, y, z) = (100, 300, 300, 300) per simulation
 
-{{ page.horizontal }}
-
 ## 2 Point Statistics Computation
 
 * 3 phase material -> 6 correlations 
 * Results in array of size (100, 300, 300, 300, 6)
 	* Initially only care about one correlation: grain boundary and pins [1,2]
 * After 2 point statistics computation: (100, 300, 300, 300, 1)
-
-{{ page.horizontal }}
 
 ## 2 Point Statistics Plots
 
@@ -103,19 +68,11 @@ Shows 2 point statistics evolve over grain growth simulation
 1. Low volume fraction 
 2. Color bar not scaled correctly by default
 
-{{ page.vertical }}
-
 ![Picture 4]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/2pt1.png)
-
-{{ page.vertical }}
 
 ![Picture 4]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/2pt2.png)
 
-{{ page.vertical }}
-
 ![Picture 4]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/2pt3.png)
-
-{{ page.horizontal }}
 
 ## PCA
 
@@ -127,43 +84,21 @@ Shows 2 point statistics evolve over grain growth simulation
 	* Have tried: 2 and 3
 		* Results in (100, 2) and (100, 2) matrix
 
-{{ page.horizontal }}
-
 ## PCA Plots
 
 * Final `.mat` files currently finishing on PACE
 * Code pipeline is working but needs polishing
 * Meaningless 2D and 3D example below
 
-{{ page.vertical }}
-
 ![Picture 4]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/pca1.png)
 
-{{ page.vertical }}
-
 ![Picture 4]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation2/pca2.png)
-
-{{ page.horizontal }}
 
 ## Next Steps
 
 Bring analysis and visualization into 3D.
 
-***
-
 1. 2 point statistics of 3D data (longer computation)
 2. Visualize 3D 2 point statistics results
 3. Compute 3D PCA and Plot to see a path per simulation
 4. Work with David Brough to use latest fitting code to create model
-
-<!-- End Here -->
-
-
-{{ page.horizontal }}
-
-#[Print]({{ site.url }}{{ site.baseurl }}{{ page.url }}/?print-pdf#)
-
-#[Back]({{ site.url }}{{ site.baseurl }})
-
-</section></section>
-
