@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:     	Pinned Grain Growth Progress Report Presentation II
+title:     	Pinned Grain Growth Progress Report II
 date:      	2015-10-05
 author:     Fred Hohman, David Montes de Oca Zapiain
 ---
