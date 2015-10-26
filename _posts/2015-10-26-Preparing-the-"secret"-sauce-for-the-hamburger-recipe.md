@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:     Preparing the “secret” sauce for the Hamburger Recipe
-date:       2015-09-28
+date:       2015-10-26
 author:     David Montes de Oca Zapiain
 ---
 
