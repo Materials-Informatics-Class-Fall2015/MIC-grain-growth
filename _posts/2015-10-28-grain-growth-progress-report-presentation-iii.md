@@ -63,33 +63,11 @@ vertical:		</section><section markdown="1">
 
 {{ page.horizontal }}
 
-## So, Our Input PCA Data Matrix...
-
-* Remember our data matrix from presentational II?
-* Size: (n_simulations, 300^3) => (112, 27000000)
-
-{{ page.vertical }}
-
-## So, Our Input PCA Data Matrix...
-
-* That's big (*really* big)
-* We need a better way to work with this
-	* Suggestions welcomed
-	* Planning to talk to Ahmet about recent reduction work
-	* 2pt statistics in 2D tappers off, expect similar feature in 3D
-
-{{ page.horizontal }}
-
 ## Some Preliminary PCA Results 
-
-* Main issue in 3D 2pt statistics of 300^3 microstructure is memory
-* Original idea using personal computer not sufficient
-* Use PACE: few example runs
-
-{{ page.vertical }}
 
 * 1 case (specific pin shape, pin percentage) for 10 time-steps
 * Can already see converging to steady state by clustering of data points
+* Cross correlation of boundary and pins
 
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation3/pca-10ms-pace.png)
 
@@ -103,6 +81,24 @@ vertical:		</section><section markdown="1">
 {{ page.vertical }}
 
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation3/pca-3ms-pace-3.png)
+
+{{ page.horizontal }}
+
+## So, Our Input PCA Data Matrix...
+
+* Remember our data matrix from presentational II?
+* Size: (n_simulations, 300^3) => (184, 27000000)
+* Main issue in 3D 2pt statistics of 300^3 microstructure is memory
+
+{{ page.vertical }}
+
+## So, Our Input PCA Data Matrix...
+
+* That's big (*really* big)
+* We need a better way to work with this
+	* Suggestions welcomed
+	* Planning to talk to Ahmet about recent reduction work
+	* 2pt statistics in 2D tappers off, expect similar feature in 3D
 
 {{ page.horizontal }}
 
