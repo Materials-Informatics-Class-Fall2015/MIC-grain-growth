@@ -25,7 +25,33 @@ vertical:		</section><section markdown="1">
 
 ## Outline
 
-*
+* Current Status
+* Preliminary I/O for our surrogate model
+* Analysis of PCA results
+
+## Current Simulations Performed
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation3/david1.png)
+
+## I/O
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation3/david2.png)
+
+## Chord Length Detailed
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation3/david3_1.png)
+
+{{ page.vertical }}
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation3/david3_2.png)
+
+{{ page.vertical }}
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation3/david3_3.png)
+
+## Expansion of our Workflow 
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation3/david4.png)
 
 {{ page.horizontal }}
 
@@ -61,7 +87,7 @@ vertical:		</section><section markdown="1">
 
 {{ page.vertical }}
 
-* 3 cases varying pin shape for given percentage for 6 time-steps
+* 3 cases varying pin shape for given percentage for 5 time-steps
 * Can see path in PCA space as microstructure evolves
 
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation3/pca-3ms-pace-1.png)
@@ -86,7 +112,7 @@ vertical:		</section><section markdown="1">
 2. Gather all chord length distribution data
 	* Quick computation
 3. Run PCA on normalized chord length data
-4. Work with David Brough to use latest fitting code to create **process-structure model**
+4. Work with David Brough to use latest fitting code to create linkages
 
 {{ page.horizontal }}
 
