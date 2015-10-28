@@ -29,13 +29,19 @@ vertical:		</section><section markdown="1">
 * Preliminary I/O for our surrogate model
 * Analysis of PCA results
 
+{{ page.horizontal}}
+
 ## Current Simulations Performed
 
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation3/david1.png)
 
+{{ page.horizontal }}
+
 ## I/O
 
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation3/david2.png)
+
+{{ page.horizontal }}
 
 ## Chord Length Detailed
 
@@ -48,6 +54,8 @@ vertical:		</section><section markdown="1">
 {{ page.vertical }}
 
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation3/david3_3.png)
+
+{{ page.horizontal }}
 
 ## Expansion of our Workflow 
 
