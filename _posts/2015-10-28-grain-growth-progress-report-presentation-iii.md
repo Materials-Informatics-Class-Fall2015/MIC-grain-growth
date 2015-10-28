@@ -86,9 +86,9 @@ vertical:		</section><section markdown="1">
 
 ## So, Our Input PCA Data Matrix...
 
-* Remember our data matrix from presentational II?
+* Remember our data matrix from presentation II?
 * Size: (n_simulations, 300^3) => (184, 27000000)
-* Main issue in 3D 2pt statistics of 300^3 microstructure is memory
+* Main issue in 3D 2pt statistics of 300^3 microstructure computation is memory
 
 {{ page.vertical }}
 
@@ -109,19 +109,20 @@ vertical:		</section><section markdown="1">
 
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation3/pca-chord-wrong.png)
 
+{{ page.horizontal }}
+
 ## Next Steps
 
 1. Determine appropriate truncation of microstructure data to perform PCA without the need for large amounts of memory
 	* Talking to Ahmet
 2. Gather all chord length distribution data
-	* Quick computation
+	* Done as of this morning!
 3. Run PCA on normalized chord length data
 4. Work with David Brough to use latest fitting code to create linkages
 
 {{ page.horizontal }}
 
 # Questions or Suggestions?
-
 
 <!-- End Here -->
 
