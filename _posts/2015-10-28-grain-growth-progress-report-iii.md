@@ -1,8 +1,9 @@
 ---
-layout:     posts
+layout:     post
 title:     	Pinned Grain Growth Progress Report III
 date:      	2015-10-28
 author:     Fred Hohman, David Montes de Oca Zapiain
+---
 
 This is the post equivalent of the presentation given for our third progress report. 
 
