@@ -7,7 +7,9 @@ author:     David Montes de Oca
 
 The purpose of this new blog post is to explain our followers how the desired property is obtained from the simulations performed. As our followers know we want to correlate grain growth to an initial distribution of insoluble precipitates. Thus since we are intending to obtain an effective property from our datasets we are facing a homogenization problem.
 As explained in previous posts. We are using 300x300x300 microstructures and we and we are using Kinetic Monte-Carlo model to simulate this “pinned” grain growth. Also in previous post we mentioned that we were able to extract our microstructure function from the simulation results.
+
 At this point we have successfully ran 100 simulations each one of them with a different initial distribution of precipitates. Each simulation outputs 100 different snapshots that also will allow us to observe an evolution of how the grain grows. Nevertheless we still need to define a way to extract the grain size distribution from our data. In previous post we mentioned that we were able to obtain a .mat file that contains information about the grain, the grain boundary and the precipitate. This .mat file consists of a 300x300x300 matrix in which the inside of the grain is represented by a 0, the grain boundary by a 1 and the precipitate by a 2. 
+
 Thus we somehow need to use this file to obtain information about the grain size distribution at the end of the SPPARKS simulation. We exposed this situation to Dr. Kalidindi and he wisely suggested us to use chord-length distribution. The way chord length distribution is obtained is shown in the following figure.
 
 ![Chord-length Distribution in X direction]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp4/img1.JPG)
