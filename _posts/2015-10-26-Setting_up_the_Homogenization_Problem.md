@@ -13,11 +13,18 @@ Thus we somehow need to use this file to obtain information about the grain size
 ![Chord-length Distribution in X direction]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp4/img1.JPG)
 
 As it can be observed from the figure chord-length distribution consists on placing various cords of different sizes along one direction and counting the frequency of them, rendering a plot similar to a histogram. The most direct way is to use the 3 orthogonal directions, since a line in any different direction will bring up more issues since now you need to define how to obtain that line and also the grains will not finish at a pixel thus we decided to only use the 3 orthogonal directions. Also it is important to mention that since we have periodic boundaries the chords can wrap around for those grains located in the edge of the microstructure.
+
 The way we implemented this algorithm was the following:
+
 1.	Obtain the chord length distribution along the x direction of the 300x300x300 Microstructure. This results in a 1x300 vector containing the frequency that each chord, from the size of 1 to 300, occurs in that direction. 
-2.	Obtain the chord length distribution along the y direction of the 300x300x300 Microstructure. This results in a 1x300 vector containing the frequency that each chord, from the size of 1 to 300, occurs in that direction. 
+
+2.	Obtain the chord length distribution along the y direction of the 300x300x300 Microstructure. This results in a 1x300 vector containing the frequency that each chord, from the size of 1 to 300, occurs in that direction.
+
 3.	Obtain the chord length distribution along the z direction of the 300x300x300 Microstructure. This results in a 1x300 vector containing the frequency that each chord, from the size of 1 to 300, occurs in that direction. 
+
 4.	Take the average of this 3 different vector and obtain a 1x300 vector with the average frequency of chord lengths in all directions.
+
+
 The result is a histogram and an image of it looks like the following. 
 
 ![Avergae Chord-length Distribution in the 3 orthogonal directions]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp4/img2.JPG)
