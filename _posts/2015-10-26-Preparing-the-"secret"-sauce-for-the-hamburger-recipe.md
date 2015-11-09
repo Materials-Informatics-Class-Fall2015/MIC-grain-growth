@@ -17,6 +17,7 @@ At this point we have successfully ran 100 simulations each one of them with a d
 
 3.	Do Principal Component Analysis (PCA) to reduce the dimensionality of your data. 
 
+
 Nevertheless he also mentioned to us that this is a guideline. Like a hamburger recipe, since everybody knows how to do a hamburger, it is the secret “sauce” that makes it unique and tasty. 
 
 
@@ -28,6 +29,8 @@ After discussing with Dr. Kalidindi and from the class we have also learned that
 
 Now with this measurement we now have all the necessary information to establish our structure-property linkages. The steps we intend to follow are detailed in the following figure, you can think of this steps as an expansion from the flowchart presented in the last Presentation. 
 
+
 ![Updated work-flow]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp5/img1.JPG)
+
 
 Please be on the lookout for the next posts since we will detail the PCA analysis performed as well as a preliminary analysis of results. 
