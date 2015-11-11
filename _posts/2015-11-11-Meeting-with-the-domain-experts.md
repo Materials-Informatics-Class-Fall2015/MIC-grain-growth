@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:     Meeting with the Domain Experts
+title:      Meeting with the Domain Experts
 date:       2015-11-11
 author:     David Montes de Oca Zapiain
 ---
