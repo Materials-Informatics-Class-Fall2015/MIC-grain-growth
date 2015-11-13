@@ -4,9 +4,9 @@ title:      Meeting with the Domain Experts
 date:       2015-11-11
 author:     David Montes de Oca Zapiain
 ---
+
 The purpose of this new blog post is to brief our readers regarding the meeting we had with the domain experts in this field.
-The domain experts in the field of simulating grain growth with Kinetic Montecarlo equations are the scientist at ([SANDIA national lab] [SANDIA national lab]), 
-we had the great opportunity to present our project and progress to ([John A. Mitchell] [John A. Mitchell]), he is a Computational Scientist in the area of Multiscale Modelling. 
+The domain experts in the field of simulating grain growth with Kinetic Montecarlo equations are the scientist at ([SANDIA national lab] [SANDIA national lab]), we had the great opportunity to present our project and progress to ([John A. Mitchell] [John A. Mitchell]), he is a Computational Scientist in the area of Multiscale Modelling. 
 
 He was deeply interested on our project and he gave some great insight on how to proceed as well as some advice on how to avoid some possible mistakes and on how to test the validity of our suggested surrogate model. 
 

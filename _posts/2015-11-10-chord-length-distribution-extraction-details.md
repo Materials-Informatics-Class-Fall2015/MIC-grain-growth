@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Chord length distribution extraction details
-date:       2015-11-11
+date:       2015-11-10
 author:     David Montes de Oca Zapiain
 ---
 
