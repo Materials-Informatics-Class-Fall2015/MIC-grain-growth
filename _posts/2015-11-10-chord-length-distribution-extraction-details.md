@@ -28,7 +28,7 @@ The way we dealt with this challenge was that we multiplied the frequency of eac
 
 The result of applying this normalization is observed on the plots below:
 
-https://cloud.githubusercontent.com/assets/12492589/11170285/59b23cde-8b9d-11e5-97e7-1b3afe92195c.JPG
+![Picture](https://cloud.githubusercontent.com/assets/12492589/11170285/59b23cde-8b9d-11e5-97e7-1b3afe92195c.JPG)
 
 As it can be observed from the plots the normalizations “shifts” the plot to the right as well as now it does not start with a sharp peak as observed on the plots on the left. Therefore this normalization now gives yields a much more insightful information regarding the crystal size distribution of the simulations, consequently this is the one we will be using to perform PCA on.
 
