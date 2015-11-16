@@ -28,12 +28,12 @@ Taking its suggestion in mind we have started to modify some steps in our pipeli
 
 The first modification made was that at this point we were able to generate a class that simulates the rolling condition. This was achieved by placing uniformly in the X-Y plane randomly selected pins, this simulates the elongation of the grains present during rolling. Also we placed this uniformly distributed planes randomly in the Z direction. This new class looks the following.
 
-![Picture](https://cloud.githubusercontent.com/assets/12492589/11170295/d42c56f2-8b9d-11e5-8423-44eb6be7047d.JPG)
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp8/bp8_1.JPG)
 
 
 The second modification we did consisted in adding a random selection of precipitates shapes to the random distribution and perform more simulations with these new upgraded random distribution. It is important to mention that we will still take into account the ones we performed earlier, this step is performed to expand our state space and hence our calibration set.
 
-![Picture](https://cloud.githubusercontent.com/assets/12492589/11170304/20ea26ae-8b9e-11e5-94cb-c10caef9b275.JPG)
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp8/bp8_2.JPG)
 
 Finally we started thinking of possible validation cases so please be on the lookout for those posts since we will be updating you regarding this issue.
 
