@@ -37,10 +37,31 @@ vertical:		</section><section markdown="1">
 
 {{ page.horizontal}}
 
+## PCA Input Subset
+
+* To start with, consider a data matrix of size (`n_simulations`,27000000) where `n_simulations`=108
+    * Only looking at randomly distributed pins
+    * 6 different percentages
+    * 3 different shapes
+
+{{ page.vertical}}
+
+* Notice the distinct 3 paths of 6 points each in 6 point clusters
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/pca-in-sub-1.png)
+
+{{ page.vertical}}
+
+* Notice the distinct 3 paths of 6 points each in 6 point clusters
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/pca-in-sub-2.png)
+
+{{ page.horizontal}}
+
 ## PCA Input
 
 * PACE job using 64GB of memory
-* Data matrix size (n_simulations,27000000) where n_simulations=220
+* Data matrix size (`n_simulations`,27000000) where `n_simulations`=220
 * 220 is the total number of simulations we were able to perform during semester
 
 {{ page.vertical}}
@@ -68,7 +89,7 @@ vertical:		</section><section markdown="1">
 ## PCA Output
 
 * Chord length distributions (in general) cleaned up after new segmentation code
-* Data matrix size (n_simulations, 299) where n_simulations=220
+* Data matrix size (`n_simulations`, 299) where `n_simulations`=220
 
 {{ page.vertical}}
 
@@ -100,6 +121,7 @@ vertical:		</section><section markdown="1">
 * We can calculate the `R-square` value for a give combination of polynomial degree and number of PC values used
     * Can create plot showing all combinations of a given set of values in `degree` and `n_components`
 
+
 (Thanks David Brough!)
 
 {{ page.vertical }}
@@ -112,11 +134,13 @@ vertical:		</section><section markdown="1">
 
 {{ page.vertical }}
 
-**Output Results**
+### Output Results
 
 ```
 Order of Polynomial 2
+
 Number of Components 2
+
 R-squared Value 0.888655863884
 ```
 
@@ -130,13 +154,17 @@ R-squared Value 0.888655863884
 
 {{ page.vertical }}
 
-**Output Results**
+### Output Results
 
 ```
 Order of Polynomial 2
+
 Number of Components 3
+
 R-squared Value 0.708516065498
 ```
+
+{{ page.horizontal }}
 
 ## Next Steps
 
