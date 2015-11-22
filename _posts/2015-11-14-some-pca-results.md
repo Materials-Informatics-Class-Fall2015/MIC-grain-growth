@@ -9,7 +9,7 @@ author:     Fred Hohman
 
 Recall we are building model to constructing process-structure linkages for pinning microstructures with precipitates and subjecting each sample to a grain growth process. For our model we have the following input and output:
 
-**Input**: autocorrelation of pins with pins of multiple simulations.
+**Input**: autocorrelation of pins with pins of multiple simulations.  
 **Output**: chord length distributions of the corresponding simulations.
 
 ## PCA Output Problem and Fix
