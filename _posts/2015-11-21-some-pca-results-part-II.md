@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Some PCA Results Part II
-date:       2015-11-14
+date:       2015-11-21
 author:     Fred Hohman
 ---
 
@@ -38,6 +38,12 @@ Also notice that are a few random clusters way out in PC spaces; we believe thes
 
 These values have now been saved in a `.mat` file and can be called accordingly to perform regression.
 
+### Scree Plot
+
+It was brought up in the comments section that I neglected to show the scree plot for our PC values and the associated percent variance. I have included this plot below that shows cumulative variance percentage against number of PC values used.
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp9/pca-in-scree.png)
+
 ## PCA Output
 
 Since our last PCA results post we have fixed our segmentation code. I ran PCA on our total chord length distributions (which remember is now 220) which has resulted in a PCA space plot depicted below.
@@ -52,9 +58,15 @@ Since our last PCA results post we have fixed our segmentation code. I ran PCA o
 
 These values have also now been saved in a `.mat` file and can be called accordingly to perform regression.
 
+### Scree Plot
+
+Similar to the input side the plot below shows cumulative variance percentage against number of PC values used.
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp9/pca-out-scree.png)
+
 ## Now What?
 
 Now 2-point statistics have been computed on both the input and output of our to-be-created model, it's time to create said model and build our process-structure linkage. We have PC values on both sides of our model, so we now need to perform some kind of regression to see if our selected classes of microstructure data are representative enough to build a strong linkage. 
 
 
-[pca]: http://materials-informatics-class-fall2015.github.io/MIC-grain-growth/2015/11/14/some-pca-results-part-II/
+[pca]: http://materials-informatics-class-fall2015.github.io/MIC-grain-growth/2015/11/14/some-pca-results/
