@@ -28,6 +28,7 @@ vertical:		</section><section markdown="1">
 * Updated Segmentation
 * PCA Input Plots
 * PCA Output Plots
+* Preliminary Regression Results
 * What's Next?
 
 {{ page.horizontal}}
@@ -58,7 +59,7 @@ vertical:		</section><section markdown="1">
 
 ## PCA Input Screen Plot
 
-* >95% variance captured in first 5 PC values
+* More than 95% variance captured in first 5 PC values
 
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/pca-in-scree.png)
 
@@ -85,9 +86,11 @@ vertical:		</section><section markdown="1">
 
 ## PCA Output Screen Plot
 
-* >95% variance captured in first 3 PC values
+* More than 95% variance captured in first 3 PC values
 
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/pca-out-scree.png)
+
+{{ page.horizontal}}
 
 ## Preliminary Regression Info
 
