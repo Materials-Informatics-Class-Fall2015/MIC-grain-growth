@@ -54,7 +54,7 @@ vertical:		</section><section markdown="1">
 
 ## Images of New Classes Added
 
-**Random Distribution with Random Shapes Class:**
+**Random Distribution with Random Shapes:**
 
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/david-2.png)
 
@@ -72,7 +72,7 @@ vertical:		</section><section markdown="1">
 
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/david-4.png)
 
-{{ page.horizontal}}
+{{ page.vertical}}
 
 ## Obtaining Grain Boundary and Precipitates Revisited
 
@@ -96,6 +96,8 @@ vertical:		</section><section markdown="1">
 * Thus by multiplying the frequency of each chord by its size and normalizing it again, the bigger chords now have a "bigger weight" in the distribution.
 
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/david-6.png)
+
+{{ page.horizontal}}
 
 ## PCA Input Subset
 
@@ -214,7 +216,7 @@ vertical:		</section><section markdown="1">
 
 * Order of Polynomial: 2
 * Number of Components: 3
-*: R-squared Value: 0.708516065498
+* R-squared Value: 0.708516065498
 
 {{ page.horizontal }}
 
