@@ -99,27 +99,6 @@ vertical:		</section><section markdown="1">
 
 {{ page.horizontal}}
 
-## PCA Input Subset
-
-* To start with, consider a data matrix of size (`n_simulations`,27000000) where `n_simulations`=108
-    * Only looking at randomly distributed pins
-    * 6 different percentages
-    * 3 different shapes
-
-{{ page.vertical}}
-
-* Notice the distinct 3 paths of 6 points each in 6 point clusters
-
-![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/pca-in-sub-1.png)
-
-{{ page.vertical}}
-
-* Notice the distinct 3 paths of 6 points each in 6 point clusters
-
-![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/pca-in-sub-2.png)
-
-{{ page.horizontal}}
-
 ## PCA Input
 
 * PACE job using 64GB of memory
@@ -175,7 +154,7 @@ vertical:		</section><section markdown="1">
 
 {{ page.horizontal}}
 
-## Preliminary Regression Info
+## Regression Test
 
 * We now have two `.m` files containing our PC values for both the inputs and outputs of our model
 * Used "hacked" Scikit-Learn/PyMKS module to perform linear regression on our PC values
@@ -188,23 +167,7 @@ vertical:		</section><section markdown="1">
 
 {{ page.vertical }}
 
-### Preliminary Regression I
-
-* Using only random simulations (108)
-
-![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/gs-1.png)
-
-{{ page.vertical }}
-
-### Output Results
-
-* Order of Polynomial: 2
-* Number of Components: 2
-* R-squared Value: 0.888655863884
-
-{{ page.vertical }}
-
-### Preliminary Regression II
+### Regression Test
 
 * Using all simulations (220)
 
@@ -212,7 +175,7 @@ vertical:		</section><section markdown="1">
 
 {{ page.vertical }}
 
-### Output Results
+### Regression Test Results
 
 * Order of Polynomial: 2
 * Number of Components: 3
@@ -222,9 +185,8 @@ vertical:		</section><section markdown="1">
 
 ## Next Steps
 
-1. Regression discussion
+1. Further analysis on selecting input and output of our model
 2. Improve process-structure linkage
-3. Decide where to stop for class and what to improve for Spring semester and Materials Data Challenge
 
 {{ page.horizontal }}
 
