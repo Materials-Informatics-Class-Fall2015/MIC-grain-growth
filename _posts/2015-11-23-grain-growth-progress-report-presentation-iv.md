@@ -25,17 +25,77 @@ vertical:		</section><section markdown="1">
 
 ## Outline
 
-* Updated Segmentation
-* PCA Input Plots
-* PCA Output Plots
-* Preliminary Regression Results
-* What's Next?
+* Meeting with domain experts outcome
+* Image segmentation revisited
+* Chord length distribution expanded
+
+* PCA input plots
+* PCA output plots
+* Preliminary regression results
+* What's next?
 
 {{ page.horizontal}}
 
-## David Stuff
+## Outcome from Meeting with Domain Experts
+
+* Meeting with a computational scientist in the area of multiscale modeling @ Sandia National Lab. 
+
+* Extremely useful meeting after which we added 2 more classes to the current simulation pool we had before. 
 
 {{ page.horizontal}}
+
+## Images of New Classes Added
+
+**Rolling:**
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/david-1.png)
+
+{{ page.vertical}}
+
+## Images of New Classes Added
+
+**Random Distribution with Random Shapes Class:**
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/david-2.png)
+
+{{ page.horizontal}}
+
+## Obtaining Grain Boundary and Precipitates Revisited
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/david-3.png)
+
+{{ page.horizontal}}
+
+## Obtaining Grain Boundary and Precipitates Revisited
+
+* Image of old image segmentation algorithm
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/david-4.png)
+
+{{ page.horizontal}}
+
+## Obtaining Grain Boundary and Precipitates Revisited
+
+* Image of new image segmentation algorithm
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/david-5.png)
+
+{{ page.horizontal}}
+
+## Chord Length Distribution Extraction Expanded
+
+* First decided to not use the average Chord Length distribution. 
+* We normalized the distribution such that the area under the curve is equal to 1. 
+* At this point this chord length tells us the probability of finding a chord of length “X” within our MS, nevertheless it is not enough.
+* We needed to add something that accounts, “weighs” more the chords of bigger size.
+
+{{ page.horizontal}}
+
+## Chord Length Distribution Extraction Expanded
+
+* Thus by multiplying the frequency of each chord by its size and normalizing it again, the bigger chords now have a "bigger weight" in the distribution.
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/presentation4/david-6.png)
 
 ## PCA Input Subset
 
@@ -136,13 +196,9 @@ vertical:		</section><section markdown="1">
 
 ### Output Results
 
-```
-Order of Polynomial 2
-
-Number of Components 2
-
-R-squared Value 0.888655863884
-```
+* Order of Polynomial: 2
+* Number of Components: 2
+* R-squared Value: 0.888655863884
 
 {{ page.vertical }}
 
@@ -156,20 +212,16 @@ R-squared Value 0.888655863884
 
 ### Output Results
 
-```
-Order of Polynomial 2
-
-Number of Components 3
-
-R-squared Value 0.708516065498
-```
+* Order of Polynomial: 2
+* Number of Components: 3
+*: R-squared Value: 0.708516065498
 
 {{ page.horizontal }}
 
 ## Next Steps
 
 1. Regression discussion
-2. Build process-structure linkage
+2. Improve process-structure linkage
 3. Decide where to stop for class and what to improve for Spring semester and Materials Data Challenge
 
 {{ page.horizontal }}
