@@ -158,7 +158,7 @@ vertical:		</section><section markdown="1">
 
 * We now have two `.m` files containing our PC values for both the inputs and outputs of our model
 * Used "hacked" Scikit-Learn/PyMKS module to perform linear regression on our PC values
-* **Challenge**: we essentially have the first and final time-step in a time series evolution and we are trying to predict structure given a new input
+* **Objective**: predict chord length distribution given a new precipitate distribution 
 * We can calculate the `R-square` value for a give combination of polynomial degree and number of PC values used
     * Can create plot showing all combinations of a given set of values in `degree` and `n_components`
 
