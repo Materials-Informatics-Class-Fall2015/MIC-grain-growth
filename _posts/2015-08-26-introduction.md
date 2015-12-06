@@ -13,6 +13,6 @@ This project will be lead by Ph.D. students [Fred Hohman][fh] (Computational Sci
 
 Check back soon for project progress!
 
-[fh]: http://www.fredhohamn.com "Fred Hohman."
+[fh]: http://www.fredhohman.com "Fred Hohman."
 [dm]: http://mined.gatech.edu/members/David-MontesdeOca-Zapiain/ "David Montes de Oca Zapiain."
 [ep]: http://mined.gatech.edu/members/Eva/ "Evdokia Popova."
