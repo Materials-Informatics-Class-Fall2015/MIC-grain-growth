@@ -34,7 +34,11 @@ Finally, below you can find the total input and output plots of our PCA space co
 **Input**
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp10/pca-plots-in-1.png)
 
-**Output**
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp10/pca-plots-in-2.png)
+
+**Output**
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp10/pca-plots-out-1.png)
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/bp10/pca-plots-out-2.png)
 
 [presiv]: http://materials-informatics-class-fall2015.github.io/MIC-grain-growth/2015/11/23/grain-growth-progress-report-iv/
