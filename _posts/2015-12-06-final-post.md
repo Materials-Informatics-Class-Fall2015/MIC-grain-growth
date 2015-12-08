@@ -135,21 +135,27 @@ Just as we expected, each simulation convergences to a different point in PCA sp
 We can now plot our entire dataset in PCA space for the input and output PC values. These "master" plots are below.
 
 Input:
-![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/pca-plots-in-3d.png)
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/pca-plots-in-3d.gif)
 
 Output:
-![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/pca-plots-out-3d.png)
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/pca-plots-out-3d.gif)
 
 **PCA: Screen Plot**
 
 To see how well PCA captures the variance of our dataset we can produce scree plots: cumulative percent variance for given amount of PC values.
 
 Input:
+
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/pca-scree-in.png)
+
 We can see that we are capturing 95% variance in the first 5 PC components. 
 
 Output:
-![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/pca-plots-scree-out.png)
+
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/pca-scree-out.png)
+
 We can see that we are capturing 95% variance in the first 8 PC components. 
 
 **Regression Results**
@@ -162,7 +168,9 @@ From the code we receive the following output:
 
 ```
 Order of Polynomial: 2
+
 Number of Components: 3
+
 MSE Value: 0.001392
 ```
 
@@ -201,7 +209,7 @@ Previous blog posts spent describing components of the work presented underwent 
 * [David Montes de Oca Zapiain][david] 
 * [Evdokia Popova][eva]
 
-[fred]: www.fredhohman.com
+[fred]: http://www.fredhohman.com
 [david]: http://mined.gatech.edu/members/David-MontesdeOca-Zapiain/
 [eva]: http://mined.gatech.edu/members/Eva/
 [brough]: http://davidbrough.net/
@@ -214,18 +222,13 @@ Previous blog posts spent describing components of the work presented underwent 
 [lr]: http://scikit-learn.org/stable/modules/linear_model.html
 [mse]: https://en.wikipedia.org/wiki/Mean_squared_error
 
-[post1]: http://materials-informatics-class-fall2015.github.io/MIC-grain-
-growth/2015/09/19/it-is-of-wise-men-to-change-opinions-and-projects/ 
-
+[post1]: http://materials-informatics-class-fall2015.github.io/MIC-grain-growth/2015/09/19/it-is-of-wise-men-to-change-opinions-and-projects/ 
 [post2]:http://materials-informatics-class-fall2015.github.io/MIC-grain-growth/2015/09/28/Divide-and-conquer!/
 [post3]:http://materials-informatics-class-fall2015.github.io/MIC-grain-growth/2015/10/26/Setting_up_the_Homogenization_Problem/
 [post4]: http://materials-informatics-class-fall2015.github.io/MIC-grain-growth/2015/10/26/Preparing-the-%22secret%22-sauce-for-the-hamburger-recipe/
 [post5]: http://materials-informatics-class-fall2015.github.io/MIC-grain-growth/2015/11/10/chord-length-distribution-extraction-details/
 
 
-[formalize-project]: http://materials-informatics-class-fall2015.github.io/MIC-grain-growth/2015/09/29/formalizing-the-project/
-[nov-poa]: http://materials-informatics-class-fall2015.github.io/MIC-grain-growth/2015/10/30/november-plan-of-attack/
-[matlab]: http://materials-informatics-class-fall2015.github.io/MIC-grain-growth/2015/10/30/running-matlab-in-the-command-line/
 [domain-expert]: http://materials-informatics-class-fall2015.github.io/MIC-grain-growth/2015/11/11/Meeting-with-the-domain-experts/
 [pca1]: http://materials-informatics-class-fall2015.github.io/MIC-grain-growth/2015/11/14/some-pca-results/
 
