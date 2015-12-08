@@ -28,16 +28,17 @@ In order to demonstrate the motivation as well as the importance of this project
 
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/grain-growth.gif)
 
-Grain Boundary Pinning is a phenomenon in which insoluble particles are added to a microstructure. These particles affect the final grain size of the microstructure and it is a common practice in industry to add this particles in order to control the final grain size distribution, hence the motivation and importance of our project.
+Grain Boundary Pinning is a phenomenon in which insoluble particles are added to a microstructure. These particles affect the final grain size of a microstructure when subjected to a process. It is a common practice in industry to "pin" a material in order to control its final grain size distribution.
 
-These particles are able to affect the grain growth of a microstructure because they reduce the surface area when a grain boundary crosses path with them. This is important because the driving force of this phenomenon is the grain boundary interfacial free energy. 
-Various tools exist that model this "pinned" grain growth, one of the most commonly used tools is an open source code called SPPARKS ([SPPARKS][SPPARKS]). SPPARKS is a program that models pinned grain growth with Kinetic Monte Carlo equations and it was developed by ([SANDIA national lab] [SANDIA national lab]).
+These particles are able to affect the grain growth of a microstructure because they reduce the surface area when a grain boundary contacts them. This is important because the driving force of this phenomenon is the grain boundary interfacial free energy. 
 
-The objective of our project consists in using a data science approach to build Process-Structure Linkages for grain boundary pinning simulations during grain growth. These linkages will be extracted by first identifying the underlying correlations between an initial distribution of precipitates and the final gain size distribution of the microstructure of interest. Ultimately these linkages will be used to build a surrogate model for SPPARKS. 
+Various tools exist that model this "pinned" grain growth. One commonly used tools is an open source code called SPPARKS ([SPPARKS][SPPARKS]). SPPARKS, developed by ([SANDIA national lab] [SANDIA national lab]), is a code that models pinned grain growth with Kinetic Monte Carlo equations.
+
+**Objective**
+
+We plan to use a data science approach to build **process-structure linkages** for grain boundary pinning simulations during grain growth. These linkages will be constructed by first identifying the underlying correlations between an initial distribution of precipitates and the final grain size distribution of the microstructure of interest. Ultimately these linkages will be used to build a surrogate model for SPPARKS. 
 
 If further details are desired about pinned grain growth, the objective and the motivation please visit this ([post][post1]).
-
-Now that the objective has been clearly stated the parameters of the simulations on which our surrogate model will be built will be detailed. 
 
 **Data Generation**
 
@@ -49,15 +50,15 @@ The details of the simulations are the following:
 * 20K Monte-Carlo time steps
 * Constant temperature
 
-In total 220 simulations were performed and for each one of them the parameters that were varied were the following:
+In total **220** simulations were performed while varying the following parameters:
 
-* Shape of precipitate (1, 2, and 3 voxel long precipitates)
-* [.5%-3%] Volume Fraction of Precipitates
-* Initial Distribution of the precipitates
+* Shape of precipitate: 1, 2, and 3 voxel long precipitates
+* Volume fraction of precipitates: {.5, 1, 1.5, 2, 2.5, 3}% 
+* Initial distribution of the precipitates (what we call "classes")
 
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/spparks.png)
 
-The simulation pool was built from 5 different initial distribution of parameters which were defined by us, and consulted with SANDIA. The classes defined are believe to encompass a representative space of the possible distributions found in real life. It is important to mention that these pool can be expanded as deemed possible for further use and validation.
+The simulation pool was built from 5 different initial distributions while varying the above parameters which were defined by us and consulted with SANDIA. The classes defined are believe to encompass a representative space of the possible distributions found in real life. It is important to mention that these pool can be expanded as deemed possible for further use and validation.
 
 The 5 classes used are the following:
 
@@ -92,13 +93,13 @@ Please refer to this ([post][post2]) for the details on how our data was process
 
 Now that the simulation pool has been built it is necessary to determine the inputs and outputs for the surrogate model to be built.
 
-As it was mentioned before the parameters varied within the simulations performed were shape of the precipitate, volume fraction of the precipitate and finally the distribution of the precipitates, thus it is logical to think that the input for the surrogate model should accurately capture all those variables. The most efficient way to capture these parameters and how they vary is with 2 point statistics, specifically with an autocorrelation of precipitates to precipitates.
+As mentioned before, the parameters varied within the simulations performed include the shape of the precipitate, the volume fraction of the precipitate, and the distribution of the precipitates, thus it is logical to think that the input for the surrogate model should accurately capture all these variables. The most efficient way to capture these parameters and how they vary is with 2-point statistics, specifically with an autocorrelation of precipitates to precipitates.
 
-Now the output needs to be identified as well. It is known that the effective property that needs to be extracted from the simulations is the grain size distribution of the final microstructure. Thus it was decided that the best way to acquire this information was to obtain the chord length distribution in the 3 orthogonal directions from the simulations. Consequently, this distribution will be used as the output of the surrogate model. It is important to mention that this distribution is also affected by the parameters captured by the defined input for the model, thus meaning that the input and output are indeed related.
+The output needs to be identified as well. It is known that the effective property that needs to be extracted from the simulations is the grain size distribution of the final microstructure. Thus it was decided that the best way to acquire this information was to obtain the chord length distribution in the 3 orthogonal directions from the simulation data. This distribution will be used as the output of the surrogate model. It is important to mention that this distribution is also affected by the parameters captured by the defined input for the model, alluding to our claim that the input and output are indeed related (but more on that later!).
 
-For more information regarding the inputs and outputs of the surrogate model please visit the following these posts. ([Post1][post3]),([Post2][post4]),([Post3][post5]).
+For more information regarding the inputs and outputs of the surrogate model please visit the following these posts. ([Post 1][post3]),([Post 2][post4]),([Post 3][post5]).
 
-At this point the inputs and outputs for the surrogate model have been clearly identified. Now the details of how this surrogate model was built are going to be provided.
+We have now identified inputs and outputs for the surrogate model.
 
 ***
 
@@ -206,7 +207,7 @@ We would like to first thank Dr. Surya Kalidindi for his expertise and guidance.
 * Wheeler, Daniel; Brough, David; Fast, Tony; Kalidindi, Surya; Reid, Andrew (2014): PyMKS: Materials Knowledge System in Python. figshare. http://dx.doi.org/10.6084/m9.figshare.1015761
 
 ## Final Thought
-Previous blog posts spent describing components of the work presented underwent changes and tweaks as the project moved forward, so some of the older blog posts may be irrelevant. If you have any questions regarding a specific component feel free to contact any one of the project members:
+As we worked on this project certain components underwent changes in research direction, so some of the older blog posts may not reflect the final content present above (or may even be irrelevant). If you have any questions regarding a specific component feel free to contact any one of the project members:
 
 * [Fred Hohman][fred] 
 * [David Montes de Oca Zapiain][david] 
