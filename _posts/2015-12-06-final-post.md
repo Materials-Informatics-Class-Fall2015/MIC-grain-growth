@@ -173,11 +173,9 @@ Now that we have PCA data for our inputs and outputs we can perform regression t
 
 From the code we receive the following output:
 
-```
-Order of Polynomial: 2  
-Number of Components: 3  
-MSE Value: 0.001392
-```
+`Order of Polynomial: 2`, 
+`Number of Components: 3`,
+`MSE Value: 0.001392`
 
 This shows our best model to build a process-structure linkage is a second order polynomial using 3 PC components.
 
@@ -196,7 +194,7 @@ Our project encompassed data generation, simulations, material informatics probl
 
 ## Acknowledgments
 
-We would like to first thank Dr. Surya Kalidindi for his expertise and guidance. We also would like to thank [David Brough][brough] and [Ahmet Cecen][ahmet] for their help in workflow development. Finally, we would like to thank Dr. John Mitchell (Sandia national labs) for his suggestions and comments on our project while we were still generating data.
+We would like to first thank Dr. Surya Kalidindi for his expertise and guidance. We also would like to thank [David Brough][brough] and [Ahmet Cecen][ahmet] for their help in workflow development. Finally, we would like to thank [Dr. John Mitchell][mitchell] (Sandia national labs) for his suggestions and comments on our project while we were still generating data.
 
 ## References
 
@@ -219,7 +217,7 @@ Previous blog posts spent describing components of the work presented underwent 
 [eva]: http://mined.gatech.edu/members/Eva/
 [brough]: http://davidbrough.net/
 [ahmet]: http://ahmetcecen.github.io/
-
+[mitchell]: https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/profile.cfm?snl_id=13850
 
 [SPPARKS]: http://spparks.sandia.gov/
 [SANDIA national lab]: http://www.sandia.gov/
