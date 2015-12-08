@@ -26,6 +26,8 @@ In this blog post the motivation for the project, the development of the model, 
 
 In order to demonstrate the motivation as well as the importance of this project, a brief explanation regarding the grain growth process will be provided.
 
+![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/grain-growth.gif)
+
 Grain Boundary Pinning is a phenomenon in which insoluble particles are added to a microstructure. These particles affect the final grain size of the microstructure and it is a common practice in industry to add this particles in order to control the final grain size distribution, hence the motivation and importance of our project.
 
 These particles are able to affect the grain growth of a microstructure because they reduce the surface area when a grain boundary crosses path with them. This is important because the driving force of this phenomenon is the grain boundary interfacial free energy. 
@@ -60,22 +62,27 @@ The simulation pool was built from 5 different initial distribution of parameter
 The 5 classes used are the following:
 
 **Band Clustering**
+
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/bc1.png)
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/bc2.png)
 
 **Quadrant Clustering**
+
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/qc1.png)
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/qc2.png)
 
 **Rolling**
+
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/roll1.png)
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/roll2.png)
 
 **Uniform**
+
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/uni1.png)
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/uni2.png)
 
 **Random**
+
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/rand1.png)
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/rand2.png)
 
@@ -142,7 +149,7 @@ Output:
 
 ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/pca-plots-out-3d.gif)
 
-**PCA: Screen Plot**
+**PCA: Scree Plot**
 
 To see how well PCA captures the variance of our dataset we can produce scree plots: cumulative percent variance for given amount of PC values.
 
@@ -167,10 +174,8 @@ Now that we have PCA data for our inputs and outputs we can perform regression t
 From the code we receive the following output:
 
 ```
-Order of Polynomial: 2
-
-Number of Components: 3
-
+Order of Polynomial: 2  
+Number of Components: 3  
 MSE Value: 0.001392
 ```
 
