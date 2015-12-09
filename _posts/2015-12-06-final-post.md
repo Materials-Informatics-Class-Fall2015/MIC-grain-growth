@@ -168,17 +168,17 @@ We can see that we are capturing 95% variance in the first 8 PC components.
 
 **Regression Results**
 
-Now that we have PCA data for our inputs and outputs we can perform regression to build a model between the two and construct a process-structure linkage. To do this we will use [Scikit-learn][scikit] Python implementation of [linear regression][lr]. We can even optimize the model building procedure to find the best model for a given number of PC values and polynomial degree. We broke our data up into two pieces: 80% to use as training data, and the remainder 20% to use as test data. We then performed leave-one-out cross-validation methods to obtain [mean squared error][mse] for each model. We did this for high combinations of PC values and polynomial degree and found the point at which we began to see over-fitting affect our MSE value. The remaining and relevant combinations are visualized below.
+Now that we have PCA data for our inputs and outputs we can perform regression to build a model between the two and construct a process-structure linkage. To do this we will use [Scikit-learn][scikit] Python implementation of [linear regression][lr]. We can even optimize the model building procedure to find the best model for a given number of PC values and polynomial degree. We broke our data up into two pieces: 80% to use as training data, and the remainder 20% to use as test data. We then performed leave-one-out cross-validation methods to obtain [mean squared error][mse] for each model. We did this for high combinations of PC values and polynomial degree and found the point at which we began to see over-fitting affect our MSE value. <!-- The remaining and relevant combinations are visualized below. -->
 
-![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/mse.png)
+<!-- ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/mse.png) -->
 
 From the code we receive the following output:
 
-`Order of Polynomial: 2`, 
-`Number of Components: 3`,
-`MSE Value: 0.001392`
+`Order of Polynomial: 1`, 
+`Number of Components: 10`,
+`MSE Value: -2.70392576062e-05`
 
-This shows our best model to build a process-structure linkage is a second order polynomial using 3 PC components.
+This shows our best model to build a process-structure linkage is a first order polynomial using 10 PC components.
 
 ### Conclusion
 
