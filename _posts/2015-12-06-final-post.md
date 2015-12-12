@@ -221,7 +221,7 @@ Here's a link to our presentation we gave on December 10, 2015.
 
 
 [pdf]: {{ site.url }}/MIC-grain-growth/assets/final-presentation.pdf
-[ppt]: {{ site.url }}/MIC-grain-growth/assets/final-presentation.ppt
+[ppt]: https://github.com/Materials-Informatics-Class-Fall2015/MIC-grain-growth/blob/gh-pages/assets/final-presentation.pptx
 
 [fred]: http://www.fredhohman.com
 [david]: http://mined.gatech.edu/members/David-MontesdeOca-Zapiain/
