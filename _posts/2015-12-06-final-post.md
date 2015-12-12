@@ -206,18 +206,19 @@ We would like to first thank Dr. Surya Kalidindi for his expertise and guidance.
 * SANDIA National Lab. (2009). SPPARKS Kinetic Monte Carlo Simulator. http://spparks.sandia.gov/index.html
 * Wheeler, Daniel; Brough, David; Fast, Tony; Kalidindi, Surya; Reid, Andrew (2014): PyMKS: Materials Knowledge System in Python. figshare. http://dx.doi.org/10.6084/m9.figshare.1015761
 
-## Final Thought
+## Final Thoughts
 As we worked on this project certain components underwent changes in research direction, so some of the older blog posts may not reflect the final content present above (or may even be irrelevant). If you have any questions regarding a specific component feel free to contact any one of the project members:
-
-## Links
-
-Here's a link to our presentation we gave on December 10, 2015.
-* PowerPoint ([`.ppt`][ppt])
-* `.pdf` (without transitions, [`.pdf`][pdf])
 
 * [Fred Hohman][fred] 
 * [David Montes de Oca Zapiain][david] 
 * [Evdokia Popova][eva]
+
+## Links
+Here's a link to our presentation we gave on December 10, 2015.
+
+* PowerPoint ([`.ppt`][ppt])
+* `.pdf` (without transitions, [`.pdf`][pdf])
+
 
 [ppt]: {{ site.url }}/MIC-grain-growth/assets/final-presentation.pdf
 [ppt]: {{ site.url }}/MIC-grain-growth/assets/final-presentation.ppt
