@@ -220,7 +220,7 @@ Here's a link to our presentation we gave on December 10, 2015.
 * `.pdf` (without transitions, [`.pdf`][pdf])
 
 
-[ppt]: {{ site.url }}/MIC-grain-growth/assets/final-presentation.pdf
+[pdf]: {{ site.url }}/MIC-grain-growth/assets/final-presentation.pdf
 [ppt]: {{ site.url }}/MIC-grain-growth/assets/final-presentation.ppt
 
 [fred]: http://www.fredhohman.com
