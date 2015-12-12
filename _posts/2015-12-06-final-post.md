@@ -168,7 +168,7 @@ We can see that we are capturing 95% variance in the first 8 PC components.
 
 **Regression Results**
 
-Now that we have PCA data for our inputs and outputs we can perform regression to build a model between the two and construct a process-structure linkage. To do this we will use [Scikit-learn][scikit] Python implementation of [linear regression][lr]. We can even optimize the model building procedure to find the best model for a given number of PC values and polynomial degree. We broke our data up into two pieces: 80% to use as training data, and the remainder 20% to use as test data. We then performed leave-one-out cross-validation methods to obtain [mean squared error][mse] for each model. We did this for high combinations of PC values and polynomial degree and found the point at which we began to see over-fitting affect our MSE value. <!-- The remaining and relevant combinations are visualized below. -->
+Now that we have PCA data for our inputs and outputs we can perform regression to build a model between the two and construct a process-structure linkage. To do this we will use [Scikit-learn][scikit] Python implementation of [linear regression][lr]. We can even optimize the model building procedure to find the best model for a given number of PC values (multiple linear regression) and polynomial degree (multivariate regression). We broke our data up into two pieces: 80% to use as training data, and the remainder 20% to use as test data. We then performed leave-one-out cross-validation methods to obtain [mean squared error][mse] for each model. We did this for high combinations of PC values and polynomial degree and found the point at which we began to see over-fitting affect our MSE value. <!-- The remaining and relevant combinations are visualized below. -->
 
 <!-- ![Picture]({{ site.url }}/MIC-grain-growth/img/blogpostimages/final/mse.png) -->
 
@@ -178,7 +178,7 @@ From the code we receive the following output:
 `Number of Components: 10`,
 `MSE Value: -2.70392576062e-05`
 
-This shows our best model to build a process-structure linkage is a first order polynomial using 10 PC components.
+This shows our best model to build a process-structure linkage is a linear model using 10 PC components.
 
 ### Conclusion
 
@@ -209,9 +209,18 @@ We would like to first thank Dr. Surya Kalidindi for his expertise and guidance.
 ## Final Thought
 As we worked on this project certain components underwent changes in research direction, so some of the older blog posts may not reflect the final content present above (or may even be irrelevant). If you have any questions regarding a specific component feel free to contact any one of the project members:
 
+## Links
+
+Here's a link to our presentation we gave on December 10, 2015.
+* PowerPoint ([`.ppt`][ppt])
+* `.pdf` (without transitions, [`.pdf`][pdf])
+
 * [Fred Hohman][fred] 
 * [David Montes de Oca Zapiain][david] 
 * [Evdokia Popova][eva]
+
+[ppt]: {{ site.url }}/MIC-grain-growth/assets/final-presentation.pdf
+[ppt]: {{ site.url }}/MIC-grain-growth/assets/final-presentation.ppt
 
 [fred]: http://www.fredhohman.com
 [david]: http://mined.gatech.edu/members/David-MontesdeOca-Zapiain/
